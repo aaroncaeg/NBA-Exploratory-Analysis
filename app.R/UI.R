@@ -1,13 +1,3 @@
-packages <- c("shiny", "dplyr", "ggplot2", "ggthemes", "plotly", "readxl", "rsconnect")
-
-# Loop through the list and install missing packages
-for (pkg in packages) {
-  if (!require(pkg, character.only = TRUE)) {
-    install.packages(pkg, dependencies = TRUE)
-    library(pkg, character.only = TRUE)  # Load the package after installation
-  }
-}
-
 library(shiny)
 library(dplyr)
 library(ggplot2)
